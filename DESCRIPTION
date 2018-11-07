@@ -1,0 +1,10 @@
+Package: kiam
+Title: Keep It A Matrix
+Version: 0.0.1
+Authors@R: person("Zach", "Flynn", email = "zlflynn@gmail.com", role = c("aut", "cre"))
+Description: KIAM (Keep it a Matrix) keeps matrices matrices and preserves their dimension when you subset them so that mind(x,rows=1) is a matrix with one row, not a vector.  Running as.matrix(x[1,]) would return a one-column matrix, instead mind(x,rows=1) returns a one-row matrix, which is probably what you want. It also defines a function "vdim" which returns the dimension of variables and defines a dimension for vectors as c(length(x),1).
+Depends: R 
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.0
